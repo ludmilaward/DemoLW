@@ -27,7 +27,9 @@ steps:
     testid: '3973'
 
 - script: echo Hello, world!
+  condition: always()
   displayName: 'Run a one-line script at the end'
 
 - script: echo Run ID of the LRC run $(LRC.LRC_RUN_ID) 
+  condition: always()
   displayName: 'Catch the Run Id of the LRC run'
